@@ -47,9 +47,9 @@ This React project was built to deliver an advanced podcast browsing experience 
 
 Data can be called via a `fetch` request to the following endpoint.
 
-| URL                               |                             |
-| --------------------------------- | --------------------------- |
-| `https://podcast-api.netlify.app` | Returns an array of PREVIEW |
+| URL [(http://localhost:5174/)]                    |                             |
+| ------------------------------------------------- | --------------------------- |
+| [(https://glittering-douhua-a96de7.netlify.app/)] | Returns an array of PREVIEW |
 
 ### Genre Titles
 
