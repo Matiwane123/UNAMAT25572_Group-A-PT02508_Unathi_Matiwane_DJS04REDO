@@ -176,3 +176,24 @@ body {
   font-size: 0.9rem;
   background: white;
 }
+
+.page-size-selector {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  padding: 0 1rem 1rem;
+}
+
+.pagination-controls {
+  display: flex;
+  gap: 0.5rem;
+  align-items: center;
+  justify-content: center;
+  padding-bottom: 2rem;
+}
+
+.page-buttons button.active {
+  background: #4a90e2;
+  color: white;
+  border-radius: 4px;
+}

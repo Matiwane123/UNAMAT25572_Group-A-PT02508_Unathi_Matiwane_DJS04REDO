@@ -2,47 +2,46 @@
 
 ## Project Overview
 
-In this project, you will build an advanced podcast browsing experience that allows users to dynamically **search**, **sort**, **filter**, and **paginate** a list of podcast shows. The goal is to create an intuitive interface that responds to user input in real time and maintains a consistent, seamless experience throughout navigation.
+This React project was built to deliver an advanced podcast browsing experience that allows users to dynamically **search**, **sort**, **filter**, and **paginate** a list of podcast shows. The focus is on creating an intuitive interface that responds to user input in real time while keeping state consistent across navigation.
 
-This project will test your ability to manage complex UI state, synchronise multiple user interactions, and maintain clean, scalable code.
+---
 
 ## Core Objectives
 
-### Search Functionality
+### 🔍 Search Functionality
 
-- Implement a flexible search that matches any part of the podcast title.
-- Results should update dynamically as the user types or upon submission.
-- Ensure that search results integrate with current filters, sorts, and pagination without resetting them.
+- Match any part of a podcast title.
+- Update results live as the user types.
+- Integrate seamlessly with filters, sorts, and pagination.
 
 ### Sorting Options
 
-- Allow sorting podcasts by:
-  - Newest first (based on last updated date).
+- Sort podcasts by:
+  - Newest first (last updated date).
   - Title A–Z and Z–A.
-- Sorting must work in tandem with any search or filter criteria.
+- Sorting works alongside search and filter criteria.
 
-### Filtering
+### 🎭 Filtering
 
-- Enable genre-based filtering using a dropdown or multi-select input.
-- Ensure filters work alongside current search, sort, and pagination state.
-- Maintain selected filters when navigating between pages or updating the list.
+- Genre-based filtering via dropdown.
+- Filters persist across pages and state changes.
 
-### Pagination
+### 📄 Pagination
 
-- Display podcasts in manageable chunks using pagination, load-more, or infinite scroll.
-- Ensure that pagination respects the currently active search, filter, and sort state.
-- Keep all UI selections intact while navigating pages.
+- Paginate podcasts into manageable chunks.
+- Pagination respects active search, filter, and sort state.
+- UI selections remain intact while navigating.
 
-### State Synchronisation
+### ⚡ State Synchronisation
 
-- Maintain a centralised and cleanly organised state using React state, context, or a state management library.
-- Ensure that all controls (search, sort, filter, pagination) reflect changes immediately and stay in sync.
+- Centralised state management with React Context.
+- All controls stay in sync and reflect changes immediately.
 
-### Code Quality & Maintainability
+### 🧹 Code Quality
 
-- Use JSDoc to document all major functions and modules.
-- Apply consistent formatting and naming conventions.
-- Keep logic modular and components reusable.
+- JSDoc documentation for major functions and modules.
+- Consistent formatting and naming conventions.
+- Modular, reusable components.
 
 ### API Endpoints
 
@@ -58,33 +57,32 @@ Since the podcast preview information fetched from the API only exposes genres b
 
 ## Project Deliverables
 
-- A fully functional React app that:
-
+- Fully functional React app:
   - Fetches and displays podcast data.
-  - Allows live searching, sorting, filtering, and pagination.
-  - Maintains consistent state across all UI interactions.
+  - Supports live search, sorting, filtering, and pagination.
+  - Maintains consistent state across interactions.
 
-- **Clean Codebase** with:
+- Clean codebase:
+  - Reusable components.
+  - Clear formatting.
+  - JSDoc documentation.
 
-  - Reusable, modular components.
-  - Clear and consistent formatting across all files.
-  - JSDoc comments for functions/modules.
-
-- **README.md** with:
-
-  - Project overview and purpose.
+- README.md:
+  - Overview and purpose.
   - Setup and usage instructions.
-  - Descriptions of key features (search, filter, sort, pagination).
+  - Key features explained.
 
-- **Version Control (GitHub)**:
-  - Clear, meaningful commit messages.
-  - Incremental commits reflecting development progress.
+- Version Control:
+  - Clear commit messages.
+  - Incremental commits showing progress.
+
+  ***
 
 ## Success Criteria
 
-- No console errors or broken UI on load.
-- All features work correctly and together without losing state.
-- Clean, maintainable codebase with documentation.
-- A polished user experience with responsive layout and real-time updates.
+- No console errors or broken UI.
+- Features work together without losing state.
+- Clean, maintainable codebase.
+- Polished, responsive user experience.
 
 ---

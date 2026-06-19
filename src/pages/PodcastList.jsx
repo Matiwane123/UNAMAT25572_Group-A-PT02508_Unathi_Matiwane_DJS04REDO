@@ -3,6 +3,7 @@ import SearchBar from "../components/SearchBar";
 import SortDropdown from "../components/SortDropdown";
 import GenreFilter from "../components/GenreFilter";
 import PaginationControls from "../components/PaginationControls";
+import PageSizeSelector from "../components/PageSizeSelector";
 import { usePodcastContext } from "../context/PodcastContext";
 
 export default function PodcastList() {
@@ -20,6 +21,8 @@ export default function PodcastList() {
     onSelectGenre,
     onSortChange,
     onPageChange,
+    onPageSizeChange,
+    pageSize,
   } = usePodcastContext();
 
   if (loading) {
@@ -59,6 +62,7 @@ export default function PodcastList() {
         <PodcastGrid podcasts={paginatedPodcasts} genres={genres} />
       )}
 
+      <PageSizeSelector value={pageSize} onChange={onPageSizeChange} />
       <PaginationControls
         currentPage={currentPage}
         totalPages={totalPages}

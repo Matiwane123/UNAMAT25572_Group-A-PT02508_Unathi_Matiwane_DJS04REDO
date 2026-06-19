@@ -12,7 +12,7 @@ export function PodcastProvider({ children }) {
   const [selectedGenre, setSelectedGenre] = useState(null);
   const [sortBy, setSortBy] = useState("title");
   const [currentPage, setCurrentPage] = useState(1);
-  const pageSize = 9;
+  const [pageSize, setPageSize] = useState(9);
 
   useEffect(() => {
     fetchPodcasts(setPodcasts, setError, setLoading);
@@ -55,7 +55,7 @@ export function PodcastProvider({ children }) {
   const paginatedPodcasts = useMemo(() => {
     const start = (currentPage - 1) * pageSize;
     return filteredPodcasts.slice(start, start + pageSize);
-  }, [filteredPodcasts, currentPage]);
+  }, [filteredPodcasts, currentPage, pageSize]);
 
   return (
     <PodcastContext.Provider
@@ -73,6 +73,10 @@ export function PodcastProvider({ children }) {
         onSelectGenre: setSelectedGenre,
         onSortChange: setSortBy,
         onPageChange: setCurrentPage,
+        onPageSizeChange: (size) => {
+          setPageSize(Number(size));
+          setCurrentPage(1);
+        },
       }}
     >
       {children}
